@@ -70,8 +70,15 @@ h2 {
     padding: 10px 20px 10px 20px;
     cursor: pointer;
 }
-.intro-logo {
-    width: 500px;
+.imgfit {
+    padding-top: 50px;
+    width: 100%;
+    display: inline-block;
+}
+.imgfit img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 #intro {
     display: flex;
@@ -90,20 +97,18 @@ h2 {
     font-size: 35px;
 }
 #about {
-    display: flex;
+    background: #000;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    color: #fff;
     text-align: center;
-    background: #ccc url('../img/about.jpg') no-repeat center center;
-    background-size: cover;
-    height: 50%;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-#about h2 {
-    font-size: 50px;
 }
 #about p {
-    font-size: 35px;
+    display: block;
+    margin-left: 125px;
+    margin-right: 125px;
+    font-size: 20px;
+    line-height: 1.6;
 }
 #download {
     background: url("../img/download.png") no-repeat center center;
@@ -117,7 +122,7 @@ h2 {
     background: #000;
     color: #fff;
     text-align: center;
-    padding-top: 250px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 #legal {

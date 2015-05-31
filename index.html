@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,700,300italic,400italic,700italic|Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,700,300italic,400italic,700italic|Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="js/skel.min.js"></script>
-    <script src="js/skelinit.min.js"></script>
+    <script src="js/skelinit.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/pagescroll.js"></script>
@@ -36,7 +36,9 @@
     <div id="intro" class="container">
         <div class="row">
             <div class="12u">
-                <img class="intro-logo" src="svg/jProxy.svg">
+                <div class="6u imgfit">
+                    <img class="intro-logo" src="svg/jProxy.svg">
+                </div>
                 <p>An exciting, free, and open source proxy.</p>
                 <p>Safe and secure.</p>
             </div>
@@ -45,20 +47,26 @@
 
     <div id="about" class="container">
         <div class="row">
-            <div class="12u">
+            <div class="8u 12u$(small) 12u$(xsmall)">
                 <h2>About jProxy</h2>
                 <p>jProxy is a new and innovative solution to browse the web securely!</p>
                 <p>More to come here.</p>
+            </div>
+            <div class="4u 12u(small) 12u(xsmall) imgfit">
+                <img style="width: 100%; padding-right: 50px;" src="img/about.jpg">
             </div>
         </div>
     </div>
 
     <div id="download" class="container">
         <div class="row">
-            <div class="4u -4u">
+            <div class="4u -4u 6u(small) 12u(xsmall)">
                 <h2>How To Download</h2>
                 <p>Currently, we are still in development, though you can view what is done so far on our GitHub page.</p>
-                <br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="4u -4u 6u(small) 12u(xsmall)">
                 <a class="button" href="https://github.com/lolzballs/jProxy"><i class="fa fa-github"></i> GITHUB</a>
             </div>
         </div>
@@ -69,11 +77,15 @@
             <div class="12u">
                 <h2>Join Us!</h2>
                 <p>Join the team, provide ideas and feedback, or just say hello!</p>
-                <br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="12u">
                 <a class="button" href="https://github.com/lolzballs/jProxy/"><i class="fa fa-github"></i> GitHub</a>
                 <a class="button" href="https://gitter.im/lolzballs/jProxy"><i class="fa fa-weixin"></i> Chat</a>
             </div>
         </div>
+    </div>
     </div>
 
     <div id="legal" class="container">
