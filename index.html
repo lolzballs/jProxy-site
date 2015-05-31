@@ -1,96 +1,139 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>jProxy | A Safe and Secure Proxy</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Fonts -->
-    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,700,300italic,400italic,700italic|Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>jProxy - A Safe and Secure Proxy</title>
 
-    <!-- Scripts -->
-    <script src="js/skel.min.js"></script>
-    <script src="js/skelinit.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/pagescroll.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-    <div class="container">
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="#" class="page-scroll">
-                        <img class="nav-logo" src="svg/jProxy.svg">jProxy
-                    </a>
-                </li>
-                <li><a href="#about" class="page-scroll">About</a></li>
-                <li><a href="#download" class="page-scroll">Download</a></li>
-                <li><a href="#join" class="page-scroll">Join Us</a></li>
-            </ul>
-        </nav>
-    </div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <div id="intro" class="container">
-        <div class="row">
-            <div class="12u">
-                <div class="6u imgfit">
-                    <img class="intro-logo" src="svg/jProxy.svg">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-globe"></i>
+                    <span class="light">jProxy</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="intro-logo imgfit col-md-4 col-md-offset-4">
+                        <img class="img-responsive" src="svg/jProxy.svg">
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="brand-heading">jProxy</h2>
+                        <p class="intro-text">
+                            An exciting, free, and open source proxy.
+                            <br>Safe and Secure.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
                 </div>
-                <p>An exciting, free, and open source proxy.</p>
-                <p>Safe and secure.</p>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div id="about" class="container">
+    <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="8u 12u$(small) 12u$(xsmall)">
+            <div class="col-lg-8 col-lg-offset-2">
                 <h2>About jProxy</h2>
-                <p>jProxy is a new and innovative solution to browse the web securely!</p>
-                <p>More to come here.</p>
-            </div>
-            <div class="4u 12u(small) 12u(xsmall) imgfit">
-                <img style="width: 100%; padding-right: 50px;" src="img/about.jpg">
+                <p>jProxy is a new and open source proxy which allows you to access the <b>Internet</b> via a <b>secure tunnel</b>.</p>
+                <p>It currently supports <b>TCP and UDP</b>, with a built-in <b>SOCKS5 Proxy</b>.</p>
+                <p>Originally created by <a href="https://jackyliao123.tk/">Jacky Liao</a> and <a href="https://bcheng.cf/">Benjamin Cheng</a>.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="download" class="container">
-        <div class="row">
-            <div class="4u -4u 6u(small) 12u(xsmall)">
-                <h2>How To Download</h2>
-                <p>Currently, we are still in development, though you can view what is done so far on our GitHub page.</p>
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download jProxy</h2>
+                    <p>jProxy can be downloaded from our GitHub release page.</p>
+                    <a href="https://github.com/lolzballs/jProxy/releases" class="btn btn-default btn-lg">Visit Download Page</a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="4u -4u 6u(small) 12u(xsmall)">
-                <a class="button" href="https://github.com/lolzballs/jProxy"><i class="fa fa-github"></i> GITHUB</a>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div id="join" class="container">
+    <section id="contact" class="container content-section text-center">
         <div class="row">
-            <div class="12u">
+            <div class="col-lg-8 col-lg-offset-2">
                 <h2>Join Us!</h2>
-                <p>Join the team, provide ideas and feedback, or just say hello!</p>
+                <p>We are open source, and licensed under the MIT License! You can help us my reporting bugs and even contributing code!</p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://github.com/lolzballs/jProxy" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="12u">
-                <a class="button" href="https://github.com/lolzballs/jProxy/"><i class="fa fa-github"></i> GitHub</a>
-                <a class="button" href="https://gitter.im/lolzballs/jProxy"><i class="fa fa-weixin"></i> Chat</a>
-            </div>
-        </div>
-    </div>
-    </div>
+    </section>
 
-    <div id="legal" class="container">
-        This site is licensed under the MIT License, and is open source on <a href="https://github.com/lolzballs/jProxy-site">GitHub</a>.
-    </div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; 2015 jProxy</p>
+            <span class="text-muted">
+                <a href="https://github.com/lolzballs/jProxy-site">
+                    This site is open-source and licesned under the MIT License.
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/page.js"></script>
+
 </body>
 
 </html>
